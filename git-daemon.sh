@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #* STRICT_PATHS    : 0 or 1, default 0
 #* INIT_TIMEOUT    : numeric, 0 - use git default value

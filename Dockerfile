@@ -1,12 +1,6 @@
-FROM ubuntu:14.04.3
-MAINTAINER ekho@ekho.name
+FROM alpine
 
-ENV DEBIAN_FRONTEND noninteractive
-
-# Install git
-RUN apt-get update -qq
-
-RUN apt-get install -qqy git
+RUN apk add --no-cache git-daemon
 
 ADD git-daemon.sh /usr/bin/git-daemon.sh
 VOLUME /git
